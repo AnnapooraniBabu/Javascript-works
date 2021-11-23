@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array_empty</title>
+</head>
+<body>
+    <script>
+        //  Empty an Array
+        // 1st method
+        let Planets = ["Mercury","Venus","Earth","Mars","Saturn","Jupiter","Uranus","Neptune"];
+
+        let Planets1 = Planets;
+
+        Planets=[];
+        document.write(Planets1);
+        console.log("First method");
+        console.log(Planets1);
+        
+        // 2nd method
+        let Bike =["Honda","Suzuki","Yamaha","Pulser"];
+
+        Bike.length =0;
+        console.log("Second method");
+        console.log(Bike);
+
+        // 3rd method
+        let Cars =["Maruthi","BMW","Audi","Benz"];
+        let Anothercars = Cars;
+
+        Cars.splice(0,Anothercars.length);
+        console.log(Cars);
+    </script>
+</body>
+</html>
